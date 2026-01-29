@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConf 2026 - Contact</title>
+</head>
+<body>
+
+    <!-- ===== HEADER SECTION ===== -->
+    <header>
+        <h1>DevConf 2026</h1>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <h2>Navigation Menu</h2>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ol>
+    </nav>
+
+    <!-- ===== BREADCRUMB NAVIGATION ===== -->
+    <nav aria-label="breadcrumb">
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Contact</span></li>
+        </ol>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <h2>Contact Us</h2>
+        <p>Have questions about DevConf 2026? We'd love to hear from you. Get in touch using the information below or fill out our contact form.</p>
+
+        <!-- Contact Information Section -->
+        <section>
+            <h3>Contact Information</h3>
+            <address>
+                <strong>DevConf 2026 Organizing Team</strong><br>
+                Tech Convention Center<br>
+                Innovation City, TC 12345<br>
+                United States<br>
+                <br>
+                <strong>Email:</strong> <a href="mailto:info@devconf2026.com">info@devconf2026.com</a><br>
+                <strong>General Inquiries:</strong> <a href="mailto:hello@devconf2026.com">hello@devconf2026.com</a><br>
+                <strong>Sponsorships:</strong> <a href="mailto:sponsors@devconf2026.com">sponsors@devconf2026.com</a><br>
+                <strong>Speaking Opportunities:</strong> <a href="mailto:speakers@devconf2026.com">speakers@devconf2026.com</a><br>
+                <strong>Phone:</strong> <a href="tel:+1-555-123-4567">+1 (555) 123-4567</a><br>
+                <strong>Fax:</strong> +1 (555) 123-4568
+            </address>
+        </section>
+
+        <!-- Location Map Section -->
+        <section>
+            <h3>Venue Location</h3>
+            <p>Our conference will be held at the Tech Convention Center in Innovation City.</p>
+            <iframe 
+                width="100%" 
+                height="400" 
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0,40.7,-73.9,40.8&layer=mapnik" 
+                style="border:1px solid black"
+                title="Map of Tech Convention Center">
+            </iframe>
+            <p><small><a href="https://www.openstreetmap.org/?lat=40.75&lon=-73.95&zoom=15" target="_blank">View larger map</a></small></p>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section>
+            <h3>Send us a Message</h3>
+            <form method="POST" action="#" id="contactForm">
+
+                <!-- Contact Form Fieldset -->
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <label for="contactName">Full Name:</label>
+                    <input type="text" id="contactName" name="contactName" required minlength="2" maxlength="100">
+                    <br><br>
+
+                    <label for="contactEmail">Email Address:</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                    <br><br>
+
+                    <label for="contactPhone">Phone Number:</label>
+                    <input type="tel" id="contactPhone" name="contactPhone" pattern="[0-9\-\+\(\) ]{10,}">
+                    <br><br>
+
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">-- Select a Subject --</option>
+                        <option value="registration">Registration Inquiry</option>
+                        <option value="sponsorship">Sponsorship</option>
+                        <option value="speaking">Speaking Opportunity</option>
+                        <option value="general">General Question</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="technical">Technical Support</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br><br>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" cols="50" required minlength="10" maxlength="1000" placeholder="Please enter your message here..."></textarea>
+                    <br><br>
+
+                    <label for="contactNewsletter">Subscribe to our newsletter:</label>
+                    <input type="checkbox" id="contactNewsletter" name="contactNewsletter">
+                    <br><br>
+
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Clear</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+        <!-- Social Media Section -->
+        <section>
+            <h3>Follow Us on Social Media</h3>
+            <p>Stay updated with the latest news and announcements:</p>
+            <ul>
+                <li><a href="https://www.twitter.com/devconf2026" target="_blank">Twitter / X</a></li>
+                <li><a href="https://www.facebook.com/devconf2026" target="_blank">Facebook</a></li>
+                <li><a href="https://www.linkedin.com/company/devconf2026" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/devconf2026" target="_blank">Instagram</a></li>
+                <li><a href="https://www.youtube.com/devconf2026" target="_blank">YouTube</a></li>
+                <li><a href="https://www.github.com/devconf2026" target="_blank">GitHub</a></li>
+            </ul>
+        </section>
+
+        <!-- Frequently Asked Questions Quick Link -->
+        <section>
+            <h3>Quick Help</h3>
+            <p>Before contacting us, please check our <a href="faq.html">Frequently Asked Questions (FAQ)</a> page. You might find the answer to your question there!</p>
+        </section>
+
+    </main>
+
+    <!-- ===== ASIDE (SIDEBAR) ===== -->
+    <aside>
+        <h2>Business Hours</h2>
+        <ul>
+            <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM (EST)</li>
+            <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM (EST)</li>
+            <li><strong>Sunday:</strong> Closed</li>
+        </ul>
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="index.html">Back to Home</a></li>
+            <li><a href="register.html">Register Now</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </aside>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <h2>Footer Information</h2>
+        <p>&copy; 2026 DevConf. All rights reserved.</p>
+        <p>
+            <a href="contact.html">Contact</a> | 
+            <a href="faq.html">FAQ</a> | 
+            <a href="index.html">Home</a>
+        </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+DEVCONF 2026 - ASSET FILES REFERENCE GUIDE
+
+This file lists all the image and video files referenced in the HTML code.
+Create these files or use placeholder images/videos to complete the project.
+
+═════════════════════════════════════════════════════════════════════════════════
+📁 REQUIRED FOLDER STRUCTURE
+═════════════════════════════════════════════════════════════════════════════════
+
+Create these folders in the root directory (alongside your HTML files):
+
+/assets/
+├── /images/
+└── /videos/
+
+═════════════════════════════════════════════════════════════════════════════════
+🖼️ IMAGE FILES NEEDED
+═════════════════════════════════════════════════════════════════════════════════
+
+HERO SECTION (index.html):
+  - assets/images/hero-poster.jpg
+    • Size: 1920x1080 px recommended
+    • Format: JPEG or PNG
+    • Purpose: Poster image for hero video on homepage
+
+SPEAKER IMAGES (speakers.html):
+  - assets/images/speaker1.jpg (Sarah Connor)
+  - assets/images/speaker2.jpg (Dr. Alan Grant)
+  - assets/images/speaker3.jpg (Ellen Ripley)
+  - assets/images/speaker4.jpg (Thomas "Neo" Anderson)
+  - assets/images/speaker5.jpg (Dana Scully)
+  - assets/images/speaker6.jpg (Marty McFly)
+    • Size: 150x150 px minimum (as specified in HTML)
+    • Format: JPEG or PNG
+    • Purpose: Speaker profile pictures
+
+SPEAKER VIDEO POSTERS (speakers.html):
+  - assets/images/speaker1-poster.jpg (Sarah Connor video)
+  - assets/images/speaker3-poster.jpg (Ellen Ripley video)
+  - assets/images/speaker4-poster.jpg (Neo Anderson video)
+    • Size: 300x200 px recommended
+    • Format: JPEG or PNG
+    • Purpose: Video thumbnail images
+
+SPONSOR LOGOS (sponsors.html):
+  - assets/images/sponsor_cyberdyne.jpg
+    • Size: 200x100 px (as specified in HTML)
+    • Purpose: Platinum sponsor logo
+  
+  - assets/images/sponsor_weyland.jpg
+    • Size: 200x100 px (as specified in HTML)
+    • Purpose: Platinum sponsor logo
+  
+  - assets/images/sponsor_metacortex.jpg
+    • Size: 150x75 px (as specified in HTML)
+    • Purpose: Gold sponsor logo
+  
+  - assets/images/sponsor_ingen.jpg
+    • Size: 120x60 px (as specified in HTML)
+    • Purpose: Silver sponsor logo
+
+TOTAL IMAGES NEEDED: 14 files
+
+═════════════════════════════════════════════════════════════════════════════════
+🎬 VIDEO FILES NEEDED
+═════════════════════════════════════════════════════════════════════════════════
+
+HOMEPAGE HERO VIDEO (index.html):
+  - assets/videos/hero-promo.mp4
+    • Format: MP4 (H.264 codec)
+    • Duration: 30-60 seconds recommended
+    • Resolution: 1280x720 or higher
+    • Attributes: autoplay, muted, loop, controls
+    • Purpose: Promotional conference video on homepage
+
+  - assets/videos/hero-promo.webm
+    • Format: WebM (VP8/VP9 codec)
+    • Same duration and resolution as MP4
+    • Purpose: Fallback video format for browser compatibility
+
+SPEAKER INTRODUCTION VIDEOS (speakers.html):
+
+Speaker 1 - Sarah Connor (Chief AI Scientist):
+  - assets/videos/speaker1-intro.mp4
+  - assets/videos/speaker1-intro.webm
+    • Duration: 30-60 seconds
+    • Purpose: Speaker introduction video
+    • Includes video controls and poster image
+
+Speaker 3 - Ellen Ripley (DevOps Lead):
+  - assets/videos/speaker3-intro.mp4
+  - assets/videos/speaker3-intro.webm
+    • Duration: 30-60 seconds
+    • Purpose: Speaker introduction video
+    • Includes video controls and poster image
+
+Speaker 4 - Thomas "Neo" Anderson (Software Architect):
+  - assets/videos/speaker4-intro.mp4
+  - assets/videos/speaker4-intro.webm
+    • Duration: 30-60 seconds
+    • Purpose: Speaker introduction video
+    • Includes video controls and poster image
+
+TOTAL VIDEOS NEEDED: 8 files (4 pairs of MP4 + WebM)
+
+═════════════════════════════════════════════════════════════════════════════════
+📋 COMPLETE FILE CHECKLIST
+═════════════════════════════════════════════════════════════════════════════════
+
+IMAGES (14 files):
+  ☐ assets/images/hero-poster.jpg
+  ☐ assets/images/speaker1.jpg
+  ☐ assets/images/speaker2.jpg
+  ☐ assets/images/speaker3.jpg
+  ☐ assets/images/speaker4.jpg
+  ☐ assets/images/speaker5.jpg
+  ☐ assets/images/speaker6.jpg
+  ☐ assets/images/speaker1-poster.jpg
+  ☐ assets/images/speaker3-poster.jpg
+  ☐ assets/images/speaker4-poster.jpg
+  ☐ assets/images/sponsor_cyberdyne.jpg
+  ☐ assets/images/sponsor_weyland.jpg
+  ☐ assets/images/sponsor_metacortex.jpg
+  ☐ assets/images/sponsor_ingen.jpg
+
+VIDEOS (8 files):
+  ☐ assets/videos/hero-promo.mp4
+  ☐ assets/videos/hero-promo.webm
+  ☐ assets/videos/speaker1-intro.mp4
+  ☐ assets/videos/speaker1-intro.webm
+  ☐ assets/videos/speaker3-intro.mp4
+  ☐ assets/videos/speaker3-intro.webm
+  ☐ assets/videos/speaker4-intro.mp4
+  ☐ assets/videos/speaker4-intro.webm
+
+═════════════════════════════════════════════════════════════════════════════════
+🎨 QUICK PLACEHOLDER ALTERNATIVES
+═════════════════════════════════════════════════════════════════════════════════
+
+For quick testing, you can use:
+
+1. IMAGES: 
+   - Use temporary image hosting services
+   - Create simple placeholder images with text
+   - Use online image generators
+   - Format: JPG/PNG
+
+2. VIDEOS:
+   - Use sample videos from:
+     • Pixabay.com (free videos)
+     • Pexels.com (free videos)
+     • YouTube (if properly licensed)
+   - Ensure videos support MP4 and WebM formats
+   - Minimum 30 seconds duration
+
+═════════════════════════════════════════════════════════════════════════════════
+💡 NOTES
+═════════════════════════════════════════════════════════════════════════════════
+
+✓ All file paths use relative paths starting with "assets/"
+✓ HTML correctly references all video formats for compatibility
+✓ MP4 is fallback if browser doesn't support WebM
+✓ Videos include fallback download links
+✓ All images have alt text for accessibility
+✓ Poster images improve user experience for videos
+✓ No images/videos are required for HTML structure validation
+✓ Project works without assets but displays broken references
+
+═════════════════════════════════════════════════════════════════════════════════
+🔧 ASSET USAGE IN HTML FILES
+═════════════════════════════════════════════════════════════════════════════════
+
+index.html:
+  - 1 hero poster image
+  - 1 hero video (MP4 + WebM)
+
+speakers.html:
+  - 6 speaker images
+  - 3 speaker video posters
+  - 3 speaker videos (MP4 + WebM each = 6 video files)
+
+sponsors.html:
+  - 4 sponsor logo images
+
+contact.html:
+  - No specific image/video files (uses iframe for map)
+
+Total referenced: 14 images + 8 videos = 22 asset files
+
+═════════════════════════════════════════════════════════════════════════════════
+
+Once you add these asset files to the respective folders, all multimedia 
+content in the HTML will display correctly!
+
+═════════════════════════════════════════════════════════════════════════════════

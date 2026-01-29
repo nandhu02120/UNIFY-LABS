@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConf 2026 - Register</title>
+</head>
+<body>
+
+    <!-- ===== HEADER SECTION ===== -->
+    <header>
+        <h1>DevConf 2026</h1>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <h2>Navigation Menu</h2>
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="speakers.html">Speakers</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ol>
+    </nav>
+
+    <!-- ===== BREADCRUMB NAVIGATION ===== -->
+    <nav aria-label="breadcrumb">
+        <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Register</span></li>
+        </ol>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <h2>Register for DevConf 2026</h2>
+        <p>Join thousands of developers at the premier tech conference. Fill out the form below to secure your spot.</p>
+
+        <!-- Registration Form -->
+        <form method="POST" action="#" id="registrationForm">
+
+            <!-- Personal Information Fieldset -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required minlength="2" maxlength="50">
+
+                <br><br>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required minlength="2" maxlength="50">
+
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9\-\+\(\) ]{10,}" placeholder="+1 (123) 456-7890">
+
+                <br><br>
+
+                <label for="company">Company / Organization:</label>
+                <input type="text" id="company" name="company" maxlength="100">
+
+            </fieldset>
+
+            <br><br>
+
+            <!-- Job Information Fieldset -->
+            <fieldset>
+                <legend>Job Information</legend>
+
+                <label for="jobTitle">Job Title:</label>
+                <input type="text" id="jobTitle" name="jobTitle" required maxlength="100">
+
+                <br><br>
+
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience" min="0" max="70" required>
+
+                <br><br>
+
+                <label for="industry">Industry:</label>
+                <select id="industry" name="industry" required>
+                    <option value="">-- Select Industry --</option>
+                    <option value="technology">Technology</option>
+                    <option value="finance">Finance</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="education">Education</option>
+                    <option value="retail">Retail</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="other">Other</option>
+                </select>
+
+            </fieldset>
+
+            <br><br>
+
+            <!-- Attendance Preferences Fieldset -->
+            <fieldset>
+                <legend>Attendance Preferences</legend>
+
+                <label for="attendanceDate">Which days will you attend?</label><br>
+                <input type="checkbox" id="day1" name="attendanceDays" value="day1">
+                <label for="day1">Day 1 (March 15)</label><br>
+                <input type="checkbox" id="day2" name="attendanceDays" value="day2">
+                <label for="day2">Day 2 (March 16)</label><br>
+
+                <br>
+
+                <label for="registrationType">Registration Type:</label>
+                <input type="radio" id="standard" name="registrationType" value="standard" required>
+                <label for="standard">Standard Pass ($99)</label><br>
+                <input type="radio" id="vip" name="registrationType" value="vip">
+                <label for="vip">VIP Pass ($199)</label><br>
+                <input type="radio" id="student" name="registrationType" value="student">
+                <label for="student">Student Pass ($29)</label><br>
+
+                <br>
+
+                <label for="dietaryRestrictions">Dietary Restrictions:</label>
+                <textarea id="dietaryRestrictions" name="dietaryRestrictions" rows="3" cols="40" maxlength="200" placeholder="Enter any dietary restrictions (optional)"></textarea>
+
+            </fieldset>
+
+            <br><br>
+
+            <!-- Interests Fieldset -->
+            <fieldset>
+                <legend>Conference Track Interests</legend>
+
+                <input type="checkbox" id="ai" name="interests" value="ai">
+                <label for="ai">Artificial Intelligence &amp; Machine Learning</label><br>
+                <input type="checkbox" id="web" name="interests" value="web">
+                <label for="web">Web Development</label><br>
+                <input type="checkbox" id="cloud" name="interests" value="cloud">
+                <label for="cloud">Cloud &amp; DevOps</label><br>
+                <input type="checkbox" id="security" name="interests" value="security">
+                <label for="security">Cybersecurity</label><br>
+                <input type="checkbox" id="mobile" name="interests" value="mobile">
+                <label for="mobile">Mobile Development</label><br>
+                <input type="checkbox" id="data" name="interests" value="data">
+                <label for="data">Data Science</label>
+
+            </fieldset>
+
+            <br><br>
+
+            <!-- Additional Information Fieldset -->
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <label for="hearAbout">How did you hear about DevConf 2026?</label>
+                <select id="hearAbout" name="hearAbout">
+                    <option value="">-- Select --</option>
+                    <option value="social">Social Media</option>
+                    <option value="email">Email Newsletter</option>
+                    <option value="friend">Friend/Colleague</option>
+                    <option value="website">Official Website</option>
+                    <option value="conference">Other Conference</option>
+                    <option value="search">Search Engine</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <br><br>
+
+                <label for="resumeUpload">Upload Your Resume (PDF only):</label>
+                <input type="file" id="resumeUpload" name="resumeUpload" accept=".pdf" maxlength="5000000">
+
+                <br><br>
+
+                <label for="additionalComments">Additional Comments:</label>
+                <textarea id="additionalComments" name="additionalComments" rows="4" cols="50" maxlength="500" placeholder="Share anything else you'd like us to know"></textarea>
+
+            </fieldset>
+
+            <br><br>
+
+            <!-- Terms and Conditions Fieldset -->
+            <fieldset>
+                <legend>Terms &amp; Conditions</legend>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">
+                    I agree to the <a href="#">Terms &amp; Conditions</a> and 
+                    <a href="#">Privacy Policy</a> of DevConf 2026.
+                </label>
+
+                <br><br>
+
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe me to the DevConf newsletter</label>
+
+            </fieldset>
+
+            <br><br>
+
+            <!-- Form Buttons -->
+            <button type="submit">Register Now</button>
+            <button type="reset">Clear Form</button>
+
+        </form>
+
+    </main>
+
+    <!-- ===== ASIDE (SIDEBAR) ===== -->
+    <aside>
+        <h2>Registration Info</h2>
+        <ul>
+            <li><strong>Date:</strong> March 15–16, 2026</li>
+            <li><strong>Location:</strong> Tech Convention Center, Innovation City</li>
+            <li><a href="faq.html">Registration FAQ</a></li>
+            <li><a href="contact.html">Contact Support</a></li>
+        </ul>
+    </aside>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <h2>Footer Information</h2>
+        <p>&copy; 2026 DevConf. All rights reserved.</p>
+        <p>
+            <a href="contact.html">Contact</a> | 
+            <a href="faq.html">FAQ</a> | 
+            <a href="index.html">Home</a>
+        </p>
+    </footer>
+
+</body>
+</html>
