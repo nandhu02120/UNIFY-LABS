@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConf 2026 - Day 3 CSS Styling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">DevConf 2026</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#speakers" class="nav-link">Speakers</a></li>
+                <li><a href="#schedule" class="nav-link">Schedule</a></li>
+                <li><a href="#register" class="nav-link">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to DevConf 2026</h1>
+            <p class="hero-subtitle">The Ultimate Web Development Conference</p>
+            <button class="cta-button">Get Your Tickets</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About DevConf 2026</h2>
+            <div class="about-content">
+                <p class="about-text">
+                    Join us for an incredible journey into the world of web development. 
+                    Learn from industry experts, network with fellow developers, and discover 
+                    the latest technologies shaping the future of web development.
+                </p>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3 class="feature-title">Expert Speakers</h3>
+                        <p class="feature-text">Learn from the best in the industry</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="feature-title">Hands-On Workshops</h3>
+                        <p class="feature-text">Get practical experience with real projects</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 class="feature-title">Networking</h3>
+                        <p class="feature-text">Connect with thousands of developers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speakers Section -->
+    <section id="speakers" class="speakers">
+        <div class="container">
+            <h2 class="section-title">Featured Speakers</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <div class="speaker-image">🎤</div>
+                    <h3 class="speaker-name">Sarah Chen</h3>
+                    <p class="speaker-role">Full Stack Developer</p>
+                    <p class="speaker-bio">Expert in React, Node.js, and cloud technologies</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">🎤</div>
+                    <h3 class="speaker-name">James Wilson</h3>
+                    <p class="speaker-role">UI/UX Designer</p>
+                    <p class="speaker-bio">Specializing in user experience and design systems</p>
+                </div>
+                <div class="speaker-card">
+                    <div class="speaker-image">🎤</div>
+                    <h3 class="speaker-name">Maria Rodriguez</h3>
+                    <p class="speaker-role">DevOps Engineer</p>
+                    <p class="speaker-bio">Cloud infrastructure and deployment specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2 class="section-title">Event Schedule</h2>
+            <div class="schedule-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">09:00 AM - 10:00 AM</div>
+                    <div class="timeline-content">
+                        <h4>Opening Keynote</h4>
+                        <p>Welcome address and industry trends</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">10:30 AM - 12:00 PM</div>
+                    <div class="timeline-content">
+                        <h4>Workshop Session 1</h4>
+                        <p>Modern JavaScript and ES6+ Features</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">1:00 PM - 2:30 PM</div>
+                    <div class="timeline-content">
+                        <h4>Workshop Session 2</h4>
+                        <p>React Mastery: Advanced Patterns</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">3:00 PM - 4:30 PM</div>
+                    <div class="timeline-content">
+                        <h4>Workshop Session 3</h4>
+                        <p>CSS Grid and Flexbox in 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Section -->
+    <section id="register" class="register">
+        <div class="container">
+            <h2 class="section-title">Early Bird Registration</h2>
+            <div class="registration-box">
+                <p class="register-text">Secure your spot at DevConf 2026</p>
+                <form class="registration-form">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select required>
+                        <option value="">Select Ticket Type</option>
+                        <option value="standard">Standard - $99</option>
+                        <option value="vip">VIP - $199</option>
+                        <option value="premium">Premium - $299</option>
+                    </select>
+                    <button type="submit" class="submit-button">Register Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 DevConf. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
