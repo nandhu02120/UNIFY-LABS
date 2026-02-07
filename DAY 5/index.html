@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DevConf 2026 — Conference for Developers</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="DevConf 2026 — modern conference for developers. Responsive, animated, production-ready UI." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="o-container header-inner">
+      <a class="brand" href="#">DevConf<span class="accent">2026</span></a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="site-nav" class="nav nav-glass">
+        <ul class="nav-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a class="c-btn c-btn--primary" href="#register">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="o-container hero-inner">
+        <div class="hero-copy">
+          <h1 class="hero-title">DevConf 2026 — Build, Learn, Connect</h1>
+          <p class="hero-sub">Three days of talks, hands-on workshops, and networking with the engineering community.</p>
+          <div class="hero-actions">
+            <a class="c-btn c-btn--primary c-btn--large pulse-attention" href="#register">Get Tickets</a>
+            <a class="c-btn c-btn--ghost" href="#schedule">View Schedule</a>
+          </div>
+        </div>
+        <div class="hero-art c-card card-elevate">
+          <picture>
+            <source media="(min-width:1024px)" srcset="../images/DAY1/hero-desktop.jpg">
+            <img src="../images/DAY1/hero-mobile.jpg" alt="Conference illustration" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section id="speakers" class="section">
+      <div class="o-container">
+        <h2 class="section-title">Featured Speakers</h2>
+        <div class="grid grid--3">
+          <article class="c-card speaker-card reveal-up">
+            <img src="../images/DAY1/speaker1.jpg" alt="Speaker 1" loading="lazy">
+            <h3>Alex Rivera</h3>
+            <p>Frontend Engineering — Performance & UX</p>
+          </article>
+
+          <article class="c-card speaker-card reveal-up">
+            <img src="../images/DAY1/speaker2.jpg" alt="Speaker 2" loading="lazy">
+            <h3>Priya Mehta</h3>
+            <p>Cloud Architect — Distributed Systems</p>
+          </article>
+
+          <article class="c-card speaker-card reveal-up">
+            <img src="../images/DAY1/speaker3.jpg" alt="Speaker 3" loading="lazy">
+            <h3>Jordan Kim</h3>
+            <p>AI Researcher — Responsible ML</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="section section--accent">
+      <div class="o-container">
+        <h2 class="section-title">Schedule Highlights</h2>
+        <div class="timeline">
+          <div class="timeline-item c-card card-elevate reveal-up">
+            <h4>Day 1 — Keynotes</h4>
+            <p>Inspiring talks and keynote panels on engineering leadership.</p>
+          </div>
+          <div class="timeline-item c-card card-elevate reveal-up">
+            <h4>Day 2 — Workshops</h4>
+            <p>Hands-on sessions: Performance, Cloud, and ML.</p>
+          </div>
+          <div class="timeline-item c-card card-elevate reveal-up">
+            <h4>Day 3 — Community</h4>
+            <p>Lightning talks, networking, and career sessions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sponsors" class="section">
+      <div class="o-container">
+        <h2 class="section-title">Sponsors</h2>
+        <div class="grid grid--4 sponsors-grid">
+          <div class="sponsor-slot c-card card-elevate reveal-up">Acme</div>
+          <div class="sponsor-slot c-card card-elevate reveal-up">CloudCorp</div>
+          <div class="sponsor-slot c-card card-elevate reveal-up">DataWorks</div>
+          <div class="sponsor-slot c-card card-elevate reveal-up">OpenSource Org</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="section section--cta">
+      <div class="o-container cta-inner">
+        <h2 class="section-title">Ready to join?</h2>
+        <p class="lead">Reserve your seat at DevConf 2026 — early bird pricing available.</p>
+        <a class="c-btn c-btn--primary c-btn--large pulse-attention" href="#">Register Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="o-container footer-inner">
+      <p>© DevConf 2026 — Built with care • <a href="#">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
