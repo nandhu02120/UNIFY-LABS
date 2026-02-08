@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World - Day 6 Capstone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .milestone {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            font-size: 1.1em;
+        }
+
+        .achievements {
+            background: #f5f5f5;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+            text-align: left;
+        }
+
+        .achievements h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .achievement-item {
+            display: flex;
+            align-items: center;
+            margin: 12px 0;
+            color: #333;
+        }
+
+        .achievement-item::before {
+            content: "✓";
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-right: 12px;
+            min-width: 24px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            color: #999;
+            font-size: 0.95em;
+        }
+
+        .hashtags {
+            margin-top: 15px;
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .github-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .github-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>👋 Hello World!</h1>
+        
+        <p class="subtitle">
+            Welcome to my first repository pushed to GitHub!<br>
+            This marks a significant milestone in my web development journey.
+        </p>
+
+        <div class="milestone">
+            <strong>🎯 Day 6 Capstone Achievement</strong><br>
+            Full Environment Implementation Complete
+        </div>
+
+        <div class="achievements">
+            <h3>What I Accomplished Today</h3>
+            <div class="achievement-item">Installed and verified Git Bash</div>
+            <div class="achievement-item">Configured global Git user identity</div>
+            <div class="achievement-item">Generated GitHub Personal Access Token</div>
+            <div class="achievement-item">Created local Git repository</div>
+            <div class="achievement-item">Connected to GitHub remote repository</div>
+            <div class="achievement-item">Successfully pushed first project to GitHub</div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Days of Learning</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Repository Created</div>
+            </div>
+        </div>
+
+        <p style="color: #666; margin: 20px 0; line-height: 1.8;">
+            This simple HTML file demonstrates the complete workflow of:<br>
+            <strong>Local Development → Git Version Control → GitHub Cloud Hosting</strong><br>
+            <br>
+            The foundation for professional web development is now in place!
+        </p>
+
+        <a href="https://github.com" class="github-link">Visit My GitHub Profile</a>
+
+        <div class="footer">
+            <p>
+                <strong>Technology Stack:</strong><br>
+                Git • GitHub • HTML5 • CSS3
+            </p>
+            <p style="margin-top: 15px;">
+                Created: Day 6 of Web Development Bootcamp<br>
+                Instructor: UnifyLabs
+            </p>
+            <div class="hashtags">
+                #WebDevelopment #Git #GitHub #Day6 #UnifyLabs #DeveloperJourney
+            </div>
+        </div>
+    </div>
+</body>
+</html>
