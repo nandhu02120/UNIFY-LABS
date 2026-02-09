@@ -1,0 +1,125 @@
+/*
+  DAY7/styles.css
+  Modular, commented, and production-oriented CSS for the Unified Component Library
+*/
+
+/* --------------- Base Variables (light theme defaults) --------------- */
+:root{
+  --bg: #f6f8fb;
+  --card: #ffffff;
+  --text: #0f1720;
+  --muted: #556070;
+  --primary: #0066ff;
+  --accent: #00e5ff;
+  --glass: rgba(255,255,255,0.6);
+  --radius: 12px;
+  --shadow-sm: 0 4px 10px rgba(15,23,32,0.06);
+  --shadow-md: 0 12px 30px rgba(15,23,32,0.08);
+  --transition: 300ms cubic-bezier(.2,.9,.2,1);
+}
+
+/* Visual override via checkbox: when #theme-toggle is checked, override the vars on .wrapper */
+input#theme-toggle:checked ~ .wrapper{
+  --bg: #071021;
+  --card: linear-gradient(180deg,#081226 0%, #071421 100%);
+  --text: #e6f0fb;
+  --muted: #9fb0c9;
+  --primary: #7cdbff;
+  --accent: #b388ff;
+  --glass: rgba(255,255,255,0.03);
+}
+
+/* --------------- Reset & Utilities --------------- */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  transition:background var(--transition), color var(--transition);
+}
+.visually-hidden{position:absolute!important;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}
+
+.container{max-width:1100px;margin:0 auto;padding:2.5rem 1rem}
+
+.site-header{
+  display:flex;align-items:center;gap:1rem;padding:1rem 1rem;background:transparent;position:sticky;top:0;z-index:40
+}
+.brand{font-weight:700;letter-spacing:0.2px}
+
+/* --------------- Navigation --------------- */
+.nav{display:flex;gap:1rem;align-items:center;margin-left:auto}
+.nav a{color:var(--text);text-decoration:none;padding:0.5rem 0.6rem;border-radius:8px;transition:background var(--transition),color var(--transition)}
+.nav a:hover{background:var(--glass)}
+
+.nav-burger{display:none;margin-left:auto;cursor:pointer}
+.nav-burger span{display:block;width:22px;height:2px;background:var(--text);margin:4px 0;border-radius:2px;transition:transform var(--transition),opacity var(--transition)}
+
+/* When nav-toggle is checked, reveal nav on small screens */
+input.nav-toggle:checked + .nav-burger{ }
+input.nav-toggle:checked ~ .nav{display:flex}
+
+/* Theme toggle */
+.theme-toggle{margin-left:1rem;cursor:pointer;display:flex;align-items:center;gap:0.4rem;padding:0.25rem 0.5rem;border-radius:999px;background:transparent;border:1px solid rgba(0,0,0,0.04)}
+.theme-toggle .sun{display:inline-block}
+.theme-toggle .moon{display:none}
+input#theme-toggle:checked ~ .wrapper .theme-toggle .sun{display:none}
+input#theme-toggle:checked ~ .wrapper .theme-toggle .moon{display:inline-block}
+
+/* --------------- Hero --------------- */
+.hero{padding:2rem 0 1rem}
+.hero h1{margin:0;font-size:clamp(1.6rem,3.5vw,2.6rem)}
+.lead{color:var(--muted);margin-top:0.5rem}
+
+/* --------------- Cards & Grid --------------- */
+.cards{margin-top:2rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.card{background:var(--card);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow-sm);transition:transform var(--transition),box-shadow var(--transition)}
+.card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md)}
+.muted{color:var(--muted);font-size:0.95rem}
+
+/* --------------- Buttons (core) --------------- */
+.btn{appearance:none;border:0;padding:0.85rem 1.25rem;border-radius:10px;font-weight:600;cursor:pointer;display:inline-block;background:var(--primary);color:#001;transition:transform var(--transition),box-shadow var(--transition),opacity var(--transition)}
+.btn:focus{outline:2px solid rgba(0,0,0,0.12);outline-offset:3px}
+
+/* Neon Glow Button */
+.btn--neon{
+  background:linear-gradient(90deg,var(--primary),var(--accent));
+  color:#021224;
+  text-shadow:0 1px 0 rgba(255,255,255,0.06);
+  box-shadow:0 0 12px rgba(124,219,255,0.18), 0 0 30px rgba(179,136,255,0.08);
+  transform:translateZ(0);
+}
+.btn--neon:hover{box-shadow:0 0 20px rgba(124,219,255,0.28), 0 0 48px rgba(179,136,255,0.18);transform:translateY(-4px) scale(1.02)}
+
+/* Rotating Border Button */
+.btn--rotating{position:relative;background:transparent;color:var(--text);padding:0.9rem 1.4rem;border-radius:12px}
+.btn--rotating::before{content:"";position:absolute;inset:0;border-radius:14px;padding:2px;background:linear-gradient(90deg,transparent,transparent);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);pointer-events:none}
+.btn--rotating::after{content:"";position:absolute;inset:-3px;border-radius:16px;background:conic-gradient(from 0deg,var(--accent),var(--primary));z-index:-1;filter:blur(10px);opacity:0.9;animation:rotate 4s linear infinite}
+.btn--rotating:hover{transform:translateY(-3px)}
+
+@keyframes rotate{to{transform:rotate(360deg)}}
+
+/* Hover Micro-animation Button */
+.btn--micro{background:transparent;border:1px solid rgba(0,0,0,0.06);backdrop-filter:blur(6px);color:var(--text)}
+.btn--micro::after{content:"";display:block;height:3px;width:0;border-radius:3px;background:var(--primary);transition:width 260ms cubic-bezier(.2,.9,.2,1);margin-top:8px}
+.btn--micro:hover{transform:translateY(-4px)}
+.btn--micro:hover::after{width:60%}
+
+/* --------------- Responsive --------------- */
+@media (max-width: 980px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width: 768px){
+  .nav{display:none;position:absolute;top:64px;right:16px;background:var(--card);flex-direction:column;padding:1rem;border-radius:12px;box-shadow:var(--shadow-md)}
+  .nav-burger{display:block}
+  .grid{grid-template-columns:1fr}
+  .container{padding:1.25rem}
+}
+
+/* --------------- Footer --------------- */
+.site-footer{margin-top:3rem;padding:2rem 0;text-align:center;color:var(--muted)}
+
+/* --------------- Small helpers --------------- */
+.showcase{margin-top:3rem;padding:1rem;border-radius:var(--radius);background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}

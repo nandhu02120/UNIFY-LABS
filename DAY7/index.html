@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unified Component Library — Day 7</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Theme toggle checkbox (checkbox-hack overrides CSS variables on .wrapper) -->
+  <input type="checkbox" id="theme-toggle" class="visually-hidden" />
+
+  <div class="wrapper">
+
+    <header class="site-header">
+      <div class="brand">Unified Component Library</div>
+
+      <!-- Nav checkbox for hamburger menu on small screens -->
+      <input type="checkbox" id="nav-toggle" class="visually-hidden nav-toggle" />
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#buttons">Buttons</a>
+        <a href="#patterns">Patterns</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <label for="theme-toggle" class="theme-toggle" title="Toggle dark / light">
+        <span class="sun">☀️</span>
+        <span class="moon">🌙</span>
+      </label>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>Unified Component Library</h1>
+        <p class="lead">A small, responsive single-page component library showcasing advanced CSS-only patterns.</p>
+      </section>
+
+      <section id="buttons" class="cards">
+        <h2>Advanced Buttons</h2>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Neon Glow</h3>
+            <button class="btn btn--neon">Neon Glow</button>
+            <p class="muted">Soft neon glow using layered box-shadow and text-shadow.</p>
+          </article>
+
+          <article class="card">
+            <h3>Rotating Border</h3>
+            <button class="btn btn--rotating">Rotating Border</button>
+            <p class="muted">Animated rotating border created with pseudo-elements.</p>
+          </article>
+
+          <article class="card">
+            <h3>Hover Micro-animation</h3>
+            <button class="btn btn--micro">Micro Hover</button>
+            <p class="muted">Subtle transform and micro interaction for tactile feedback.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="patterns" class="showcase">
+        <h2>Patterns & Utilities</h2>
+        <p class="muted">Modular CSS variables and utility classes make this library easy to extend.</p>
+      </section>
+
+      <footer class="site-footer">
+        <small>© 2026 Unified Component Library — CSS-only, responsive, and accessible.</small>
+      </footer>
+    </main>
+
+  </div>
+
+</body>
+</html>
