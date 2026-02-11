@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Technical Resume — Portfolio</title>
+    <meta name="description" content="Professional technical resume and portfolio — mobile-first, accessible, and responsive." />
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Theme toggle (CSS-only) -->
+    <input id="theme-toggle" class="visually-hidden" type="checkbox" aria-hidden="true">
+
+    <div class="site">
+
+      <header class="site-header" role="banner">
+        <div class="container header-inner">
+          <div class="brand">
+            <a href="#" aria-label="Homepage"><span class="logo">NR</span> Nandh Resume</a>
+          </div>
+
+          <!-- Nav toggle (checkbox hack) -->
+          <input id="nav-toggle" class="visually-hidden nav-toggle" type="checkbox" aria-hidden="true">
+          <label for="nav-toggle" class="burger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </label>
+
+          <nav class="nav" role="navigation" aria-label="Primary Navigation">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+
+          <label for="theme-toggle" class="theme-toggle" title="Toggle dark mode" aria-hidden="true">
+            <span class="vis">Theme</span>
+          </label>
+        </div>
+      </header>
+
+      <main id="main" class="main" role="main">
+        <section class="hero container">
+          <div class="hero-inner">
+            <div class="intro">
+              <h1>Full-Stack Software Engineer</h1>
+              <p class="lead">Building performant, accessible, and maintainable web applications. Experienced with modern JavaScript, architecture, and system design.</p>
+
+              <p class="actions">
+                <a class="btn btn--neon" href="#projects">View Projects</a>
+                <a class="btn btn--ghost" href="#contact">Contact Me</a>
+              </p>
+            </div>
+
+            <aside class="profile" aria-labelledby="about-heading">
+              <img src="assets/profile.svg" alt="Profile photo" class="profile-img">
+              <h2 id="about-heading">Nandh</h2>
+              <p class="muted">Software Engineer — Frontend, Backend, DevOps</p>
+            </aside>
+          </div>
+        </section>
+
+        <section id="about" class="about container">
+          <h2>About</h2>
+          <article>
+            <p>I design and build high-quality applications with an emphasis on performance, accessibility, and developer experience. I enjoy mentoring and collaborating with cross-functional teams to deliver production-grade software.</p>
+            <p class="muted">Location: Remote — Open to relocation. Available for freelance and full-time roles.</p>
+          </article>
+        </section>
+
+        <section id="skills" class="skills container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill">JavaScript (ES6+)</div>
+            <div class="skill">HTML5 & ARIA</div>
+            <div class="skill">CSS3 — Responsive</div>
+            <div class="skill">React / Vue</div>
+            <div class="skill">Node.js & APIs</div>
+            <div class="skill">Testing & CI/CD</div>
+            <div class="skill">Performance Optimization</div>
+            <div class="skill">Accessibility (a11y)</div>
+          </div>
+        </section>
+
+        <section id="projects" class="projects container">
+          <h2>Selected Projects</h2>
+          <div class="projects-grid">
+            <figure class="project">
+              <img src="assets/project1.svg" alt="Project One screenshot">
+              <figcaption>
+                <h3>Project One</h3>
+                <p class="muted">A performant single-page application with complex state management.</p>
+                <p><a class="link" href="#">View case study →</a></p>
+              </figcaption>
+            </figure>
+
+            <figure class="project">
+              <img src="assets/project2.svg" alt="Project Two screenshot">
+              <figcaption>
+                <h3>Project Two</h3>
+                <p class="muted">Platform for real-time collaboration with WebSocket-driven sync.</p>
+                <p><a class="link" href="#">View case study →</a></p>
+              </figcaption>
+            </figure>
+
+            <figure class="project">
+              <img src="assets/project3.svg" alt="Project Three screenshot">
+              <figcaption>
+                <h3>Project Three</h3>
+                <p class="muted">Scalable microservices example with observability and CI/CD.</p>
+                <p><a class="link" href="#">View case study →</a></p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section id="contact" class="contact container">
+          <h2>Contact</h2>
+          <form id="contact-form" action="#" method="post" novalidate>
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required minlength="2" aria-required="true">
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required aria-required="true">
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+            </div>
+
+            <div class="form-row">
+              <button class="btn btn--gradient" type="submit">Send Message</button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer" role="contentinfo">
+        <div class="container">
+          <p class="muted">© 2026 Nandh. Built with semantic HTML, accessible patterns, and responsive design.</p>
+        </div>
+      </footer>
+
+    </div>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
