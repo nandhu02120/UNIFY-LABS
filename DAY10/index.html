@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brand Authentication — Instagram-style Clone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="auth-wrap">
+      <div class="auth-card">
+        <header class="brand">
+          <h1 class="logo">InstaBrand</h1>
+          <p class="subtitle">Welcome back — sign in to your account</p>
+        </header>
+        <form class="auth-form" novalidate>
+          <div class="field">
+            <input id="email" name="email" type="email" required />
+            <label for="email">Email</label>
+            <small class="field-hint">We'll never share your email.</small>
+          </div>
+
+          <div class="field">
+            <input id="password" name="password" type="password" minlength="8" required />
+            <label for="password">Password</label>
+            <small class="field-hint">Minimum 8 characters</small>
+          </div>
+
+          <button class="btn primary" type="submit">Log In</button>
+
+          <div class="divider"><span>OR</span></div>
+
+          <button class="btn social" type="button" aria-label="Login with Facebook">Continue with Facebook</button>
+
+        </form>
+
+        <footer class="auth-footer">
+          <p>Don't have an account? <a href="#">Sign up</a></p>
+        </footer>
+      </div>
+
+      <aside class="team-preview">
+        <h2>Meet the Team</h2>
+        <p class="lead">Our small, talented group building delightful experiences.</p>
+        <section class="team-grid">
+          <article class="card">
+            <div class="avatar"><img src="assets/avatar-1.svg" alt="Ava One"/></div>
+            <h3>Alex Rivera</h3>
+            <p class="role">Product Designer</p>
+            <div class="socials">
+              <a href="#" aria-label="Alex on X" class="s x">X</a>
+              <a href="#" aria-label="Alex on LinkedIn" class="s in">in</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="avatar"><img src="assets/avatar-2.svg" alt="Ava Two"/></div>
+            <h3>Priya Shah</h3>
+            <p class="role">Frontend Engineer</p>
+            <div class="socials">
+              <a href="#" aria-label="Priya on X" class="s x">X</a>
+              <a href="#" aria-label="Priya on LinkedIn" class="s in">in</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="avatar"><img src="assets/avatar-3.svg" alt="Ava Three"/></div>
+            <h3>Sam O'Neil</h3>
+            <p class="role">Backend Engineer</p>
+            <div class="socials">
+              <a href="#" aria-label="Sam on X" class="s x">X</a>
+              <a href="#" aria-label="Sam on LinkedIn" class="s in">in</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="avatar"><img src="assets/avatar-4.svg" alt="Ava Four"/></div>
+            <h3>Lee Wang</h3>
+            <p class="role">Marketing</p>
+            <div class="socials">
+              <a href="#" aria-label="Lee on X" class="s x">X</a>
+              <a href="#" aria-label="Lee on LinkedIn" class="s in">in</a>
+            </div>
+          </article>
+
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <script>
+    (function(){
+      // minimal validation feedback for demo
+      const form = document.querySelector('.auth-form');
+      form.addEventListener('submit', e => {
+        if(!form.checkValidity()){
+          e.preventDefault();
+          form.querySelectorAll('input').forEach(inp=>{
+            if(!inp.checkValidity()) inp.classList.add('invalid');
+          });
+        }
+      });
+
+      document.querySelectorAll('.auth-form input').forEach(input=>{
+        input.addEventListener('input', ()=> input.classList.remove('invalid'));
+      });
+    })();
+  </script>
+</body>
+</html>
