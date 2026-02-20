@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Coming Soon — Project Unify</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="particles" aria-hidden="true">
+    <!-- 30 particle elements for animated background -->
+    <span class="particle" style="--i:1"></span>
+    <span class="particle" style="--i:2"></span>
+    <span class="particle" style="--i:3"></span>
+    <span class="particle" style="--i:4"></span>
+    <span class="particle" style="--i:5"></span>
+    <span class="particle" style="--i:6"></span>
+    <span class="particle" style="--i:7"></span>
+    <span class="particle" style="--i:8"></span>
+    <span class="particle" style="--i:9"></span>
+    <span class="particle" style="--i:10"></span>
+    <span class="particle" style="--i:11"></span>
+    <span class="particle" style="--i:12"></span>
+    <span class="particle" style="--i:13"></span>
+    <span class="particle" style="--i:14"></span>
+    <span class="particle" style="--i:15"></span>
+    <span class="particle" style="--i:16"></span>
+    <span class="particle" style="--i:17"></span>
+    <span class="particle" style="--i:18"></span>
+    <span class="particle" style="--i:19"></span>
+    <span class="particle" style="--i:20"></span>
+    <span class="particle" style="--i:21"></span>
+    <span class="particle" style="--i:22"></span>
+    <span class="particle" style="--i:23"></span>
+    <span class="particle" style="--i:24"></span>
+    <span class="particle" style="--i:25"></span>
+    <span class="particle" style="--i:26"></span>
+    <span class="particle" style="--i:27"></span>
+    <span class="particle" style="--i:28"></span>
+    <span class="particle" style="--i:29"></span>
+    <span class="particle" style="--i:30"></span>
+  </div>
+
+  <main id="main" class="wrap">
+    <header class="hero">
+      <h1 class="neon" aria-hidden="false">COMING SOON</h1>
+      <p class="subheader"> <span class="typewriter">Launching something extraordinary — join the waitlist.</span></p>
+      <div class="actions">
+        <button id="notifyBtn" class="btn primary">Notify Me</button>
+      </div>
+    </header>
+
+    <section class="gallery" aria-label="Project screenshots">
+      <figure style="--span:18"><img src="assets/screenshots/shot1.svg" alt="Project screenshot 1"></figure>
+      <figure style="--span:12"><img src="assets/screenshots/shot2.svg" alt="Project screenshot 2"></figure>
+      <figure style="--span:22"><img src="assets/screenshots/shot3.svg" alt="Project screenshot 3"></figure>
+      <figure style="--span:14"><img src="assets/screenshots/shot4.svg" alt="Project screenshot 4"></figure>
+      <figure style="--span:20"><img src="assets/screenshots/shot5.svg" alt="Project screenshot 5"></figure>
+      <figure style="--span:10"><img src="assets/screenshots/shot6.svg" alt="Project screenshot 6"></figure>
+      <figure style="--span:16"><img src="assets/screenshots/shot7.svg" alt="Project screenshot 7"></figure>
+      <figure style="--span:12"><img src="assets/screenshots/shot8.svg" alt="Project screenshot 8"></figure>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__overlay" data-close>
+      <div class="modal__dialog" role="document">
+        <button class="modal__close" aria-label="Close subscription dialog">×</button>
+        <h2>Get Notified</h2>
+        <p>Enter your email and we'll notify you when we launch.</p>
+        <form id="notifyForm">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" name="email" type="email" placeholder="your@domain.com" required>
+          <div class="modal__actions">
+            <button type="submit" class="btn primary">Subscribe</button>
+            <button type="button" class="btn" data-close>Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="announce" class="sr-only" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
